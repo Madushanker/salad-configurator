@@ -1,11 +1,16 @@
+import { Footer } from "./components/Footer";
+
 function App() {
   return (
-    <div className="bg-gray-900 min-h-screen flex items-center justify-center">
-      <h1 className="text-white text-3xl font-bold">
-        Tailwind is working!
-      </h1>
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-grow p-8">
+        <h1 className="text-3xl font-bold">Salad Configurator</h1>
+        <p className="mt-4">Main content will come here.</p>
+      </main>
+
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
