@@ -1,11 +1,33 @@
-import { Footer } from "./components/Footer";
+import {Footer} from "./components/Footer";
+import BowlSelection from "./components/BowlSelection";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow p-8">
-        <h1 className="text-3xl font-bold">Salad Configurator</h1>
-        <p className="mt-4">Main content will come here.</p>
+    <div className="min-h-screen flex flex-col bg-gray-100">
+
+      <main className="flex-1 p-6 space-y-6">
+
+        <div className="bg-[#2f2f2f] p-6 rounded-3xl text-white">
+          Top Controls (Search + Filters)
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+           <BowlSelection />
+
+           <div className="bg-[#2f2f2f] p-6 rounded-3xl flex items-center justify-center text-white min-h-[500px]">
+                Bowl Image Here
+           </div>
+
+           <div className="bg-[#2f2f2f] p-6 rounded-3xl text-white min-h-[500px]">
+              Right Panel (Select Base)
+           </div>
+         </div>
+
+        <div className="bg-[#2f2f2f] p-6 rounded-3xl text-white flex justify-between">
+          <div>Selected Items</div>
+          <div>Price / Weight</div>
+        </div>
+
       </main>
 
       <Footer />
