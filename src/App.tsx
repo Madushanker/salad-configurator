@@ -1,5 +1,7 @@
+import CenterBowl from "./components/CenterBowl";
 import {Footer} from "./components/Footer";
 import BowlSelection from "./components/BowlSelection";
+
 
 function App() {
   return (
@@ -14,9 +16,7 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
            <BowlSelection />
 
-           <div className="bg-[#2f2f2f] p-6 rounded-3xl flex items-center justify-center text-white min-h-[500px]">
-                Bowl Image Here
-           </div>
+           <CenterBowl />
 
            <div className="bg-[#2f2f2f] p-6 rounded-3xl text-white min-h-[500px]">
               Right Panel (Select Base)
